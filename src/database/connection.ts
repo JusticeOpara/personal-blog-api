@@ -5,7 +5,7 @@ import Logger from '../utils/logger'
 const connectDB = async () => {
     try {
         await mongoose.connect(config.DATABASE_URL as string, {
-            dbName: 'Blogging-API',
+            dbName: 'Personal-Blog-API',
             maxPoolSize: 10,
             minPoolSize: 2
         })
